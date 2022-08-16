@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Departamento de Vinculación Social | Registro de usuario.</title>
+  <link rel="stylesheet" href="assets/css/adminlte.min.css">
+  <link rel="stylesheet" href="assets/css/layout_bg_upta.css">
+  <link rel="stylesheet" href="assets/css/registro.css">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+</head>
+
+<body class="hold-transition register-page">
+  <div class="overlay"></div>
+  <div class="register-box">
+    <div class="bg-white rounded-circle logo-container my-2 shadow">
+      <img width="60" height="60" src="./assets/logo-upta.png">
+    </div>
+    <div class="register-logo">
+      <a class="text-white" href="#">
+        <h1 class="font-weight-normal">Registro de usuario</h1>
+      </a>
+    </div>
+    <div class="card">
+      <div class="card-body register-card-body">
+        <form action="" method="post">
+          <h2>Datos de usuario</h2>
+          <p class="text-muted">
+            Todos los campos son obligatorios.
+          </p>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="mb-3 col-md-6">
+                <label for="usernameInput">Nombre de usuario: </label>
+                <input type="text" class="form-control" placeholder="Nombre de usuario" name="username" id="usernameInput" required>
+              </div>
+              <div class="mb-3 col-md-6">
+                <label for="passwordInput">Contraseña: </label>
+                <input type="password" class="form-control" placeholder="Contraseña" id="usernameInput" required>
+              </div>
+            </div>
+            <hr>
+            <h2>Datos personales</h2>
+            <div class="row">
+              <div class="mb-3 col-md-6">
+                <label for="namesInput">Nombres: </label>
+                <input type="text" class="form-control" placeholder="Nombres" name="names" id="namesInput" required>
+              </div>
+              <div class="mb-3 col-md-6">
+                <label for="lastnamesInput">Apellidos: </label>
+                <input type="text" class="form-control" placeholder="Apellidos" name="lastnames" id="lastnamesInput" required>
+              </div>
+              <div class="mb-3 col-md-6">
+                <label for="birthInput">Fecha de nacimiento: </label>
+                <input type="date" class="form-control" placeholder="Fecha de nacimiento" name="birth" id="birthInput" required>
+              </div>
+              <div class="mb-3 col-md-6">
+                <label for="genderSelect">Sexo: </label>
+                <select name="gender" class="form-control" placeholder="Sexo" id="genderSelect" required>
+                  <option selected>Seleccionar...</option>
+                  <option value="male">Hombre</option>
+                  <option value="female">Mujer</option>
+                </select>
+              </div>
+              <div class="mb-3 col-md-6">
+                <label for="ciInput">Cédula: </label>
+                <div class="d-flex ci-wrapper">
+                  <select class="form-control" name="citype" required>
+                    <option value="v">V-</option>
+                    <option value="e">E-</option>
+                  </select>
+                  <input class="form-control" type="number" name="ci" placeholder="Cédula de Identidad" id="ciInput" required>
+                </div>
+              </div>
+              <div class="mb-3 col-md-6">
+                <label for="emailInput">Correo Electrónico: </label>
+                <input class="form-control" type="email" name="email" placeholder="Correo Electrónico" id="emailInput" required>
+              </div>
+              <div class="mb-3 col-md-6">
+                <label for="phoneInput">Número de Teléfono: </label>
+                <input class="form-control" type="text" name="phone" placeholder="Numero de Teléfono" id="phoneInput" required>
+              </div>
+              <div class="mb-3 col-md-6">
+                <label for="gradeSelect">Grado de Instrucción: </label>
+                <select class="form-control" name="grade" required>
+                  <option selected>Seleccionar...</option>
+                  <option value="basic">Primaria</option>
+                  <option value="middle">Bachillerato</option>
+                  <option value="tsu">TSU</option>
+                  <option value="pregrade">Pregrado</option>
+                </select>
+              </div>
+              <div class="mb-3 col-12">
+                <label for="addressTextarea">Dirección: </label>
+                <textarea class="form-control" name="address" placeholder="Dirección" id="addressTextarea"></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-lg btn-primary btn-block">Registrarse</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/adminlte.min.js"></script>
+</body>
+
+</html>
