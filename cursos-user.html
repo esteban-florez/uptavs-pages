@@ -6,14 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>
     Cursos | Departamento de Vinculación Social
-  </title>
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  </title>  
   <link rel="stylesheet" href="assets/css/all.min.css">
   <link rel="stylesheet" href="assets/css/select2.min.css">
   <link rel="stylesheet" href="assets/css/adminlte.min.css">
   <link rel="stylesheet" href="assets/css/layout.css">
-  <link rel="stylesheet" href="assets/css/cursos_user.css">
+  <link rel="stylesheet" href="assets/css/cursos-user.css">
 </head>
 
 <body class="hold-transition sidebar-mini layout-navbar-fixed layout-fixed">
@@ -40,7 +38,7 @@
                 <div class="media-body">
                   <h3 class="dropdown-item-title">
                     Inscripción confirmada
-                    <span class="float-right text-sm"><i class="fa fa-times"></i></span>
+                    <span class="float-right text-sm"><i class="fas fa-times"></i></span>
                   </h3>
                   <p class="text-sm">Curso de Desarrollo Web</p>
                   <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> Hace 5 horas</p>
@@ -67,16 +65,16 @@
         <li class="nav-item">
           <a class="nav-link" role="button" data-toggle="modal" data-target="#infoModal">
             <i class="fas fa-info-circle mr-1"></i>
-            <span class="d-none d-sm-inline">Contáctanos</span>
+            <span class="d-none d-md-inline">Contáctanos</span>
           </a>
         </li>
       </ul>
     </nav>
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <div class="sidebar mt-0 h-100">
-        <div class="user-panel mt-3 pb-3 mb-3 d-flex align-items-center">
+        <div class="user-panel my-3 pb-3 d-flex align-items-center">
           <div class="image pl-2">
-            <img src="assets/img/rudy.jpg" class="img-circle elevation-2" alt="User Image">
+            <img src="assets/img/rudy.jpg" class="img-circle elevation-2" alt="Imagen del usuario">
           </div>
           <div class="info">
             <p class="d-block text-white m-0">Esteban Florez</p>
@@ -133,15 +131,15 @@
       </div>
     </aside>
     <main class="content-wrapper">
-      <section class="card p-2 p-md-3">
-        <div class="courses-header">
-          <h1 class="m-sm-0">Cursos</h1>
+      <section class="card p-2 p-sm-3">
+        <div class="content-top-layout">
+          <h1>Cursos</h1>
           <button type="button" class="btn btn-primary mb-2 m-sm-0" data-toggle="collapse" data-target="#filtersCollapse">
             <i class="fas fa-sm fa-filter"></i>
             <span>Filtros</span>
           </button>
-          <form class="form-inline">
-            <div class="input-group w-100">
+          <form>
+            <div class="input-group">
               <input class="form-control" type="text" placeholder="Buscar curso...">
               <div class="input-group-append">
                 <button class="btn btn-dark" type="submit">
@@ -151,8 +149,8 @@
             </div>
           </form>
         </div>
-        <hr>
-        <div class="collapse show" id="filtersCollapse">
+        <div class="collapse" id="filtersCollapse">
+          <hr>
           <form class="container-fluid">
             <div class="row">
               <div class="col-md-6 px-5">
@@ -174,6 +172,10 @@
                 <div class="form-check">
                   <input class="form-check-input" type="radio" name="order" id="dateRadio" value="date" checked>
                   <label class="form-check-label" for="dateRadio">Fecha</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="order" id="dateRadio" value="date">
+                  <label class="form-check-label" for="dateRadio">Nombre</label>
                 </div>
                 <div class="form-check">
                   <input class="form-check-input" type="radio" name="order" id="durationRadio" value="duration">
@@ -319,15 +321,9 @@
   </div>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/adminlte.min.js"></script>
   <script src="js/select2.min.js"></script>
-  <script>
-    $(document).ready(() => {
-      $('#areaSelect').select2({
-        placeholder: 'Seleccionar...'
-      });
-    })
-  </script>
+  <script src="js/adminlte.min.js"></script>
+  <script src="js/enableSelect2.js"></script>
 </body>
 
 </html>
