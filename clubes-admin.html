@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>
-    Cursos | Departamento de Vinculación Social
+    Clubes | Departamento de Vinculación Social
   </title>  
   <link rel="stylesheet" href="assets/css/all.min.css">
   <link rel="stylesheet" href="assets/css/select2.min.css">
@@ -132,11 +132,11 @@
     <main class="content-wrapper">
       <section class="card p-2 p-sm-3">
         <div class="content-top-layout alt-top-layout">
-          <h1>Cursos</h1>
+          <h1>Clubes</h1>
           <div class="buttons-wrapper">
             <button class="btn btn-success" type="button">
               <i class="fas fa-plus"></i>
-              <span class="d-none d-sm-inline">Crear curso</span>
+              <span class="d-none d-sm-inline">Crear club</span>
             </button>
             <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#filtersCollapse">
               <i class="fas fa-filter"></i>
@@ -145,7 +145,7 @@
           </div>
           <form>
             <div class="input-group">
-              <input class="form-control" type="text" placeholder="Buscar curso...">
+              <input class="form-control" type="text" placeholder="Buscar club...">
               <div class="input-group-append">
                 <button class="btn btn-dark" type="submit">
                   <i class="fas fa-search"></i>
@@ -160,14 +160,16 @@
             <div class="row">
               <div class="col-md-6 px-5">
                 <h4>Filtrar por: </h4>
-                <label class="font-weight-normal" for="areaSelect">Área de Formación: </label>
+                <label class="font-weight-normal" for="daySelect">Día de actividades: </label>
                 <div class="position-relative">
-                  <select class="form-control" name="area" id="areaSelect" multiple>
-                    <option value="informatica">Informática</option>
-                    <option value="mecanica">Mecánica</option>
-                    <option value="artes">Artes</option>
-                    <option value="contaduria">Contaduría</option>
-                    <option value="electricidad">Electricidad</option>
+                  <select class="form-control" name="day" id="daySelect" multiple>
+                    <option value="monday">Lunes</option>
+                    <option value="tuesday">Martes</option>
+                    <option value="wednesday">Miércoles</option>
+                    <option value="thursday">Jueves</option>
+                    <option value="friday">Viernes</option>
+                    <option value="saturday">Sábado</option>
+                    <option value="sunday">Domingo</option>
                   </select>
                   <i class="fas fa-angle-down position-absolute select-icon"></i>
                 </div>
@@ -175,101 +177,99 @@
               <div class="col-md-6 px-5">
                 <h4>Ordenar por: </h4>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="order" id="dateRadio" value="date" checked>
-                  <label class="form-check-label" for="dateRadio">Fecha</label>
+                  <input class="form-check-input" type="radio" name="order" id="idRadio" value="id" checked>
+                  <label class="form-check-label" for="idRadio">Hora</label>
                 </div>
                 <div class="form-check">
                   <input class="form-check-input" type="radio" name="order" id="nameRadio" value="name">
                   <label class="form-check-label" for="nameRadio">Nombre</label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="order" id="durationRadio" value="duration">
-                  <label class="form-check-label" for="durationRadio">Duración</label>
+                  <input class="form-check-input" type="radio" name="order" id="hourRadio" value="hour">
+                  <label class="form-check-label" for="hourRadio">Hora</label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="order" id="priceRadio" value="price">
-                  <label class="form-check-label" for="priceRadio">Precio</label>
+                  <input class="form-check-input" type="radio" name="order" id="hourRadio" value="hour">
+                  <label class="form-check-label" for="hourRadio">Miembros</label>
                 </div>
               </div>
             </div>
           </form>
         </div>
       </section>
-      <section class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <div class="card">
-              <div class="card-body table-responsive p-0">
-                <table class="table table-bordered table-hover text-center">
-                  <thead>
-                    <tr>
-                      <th>ID</th>
-                      <th>Nombre</th>
-                      <th>Instructor</th>
-                      <th>Precio</th>
-                      <th>Matrícula</th>
-                      <th>Estado</th>
-                      <th>Duración</th>
-                      <th>Acciones</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>#1</td>
-                      <td>Diseño Gráfico</td>
-                      <td>
-                        <a href="#">Elías Vargas</a>
-                      </td>
-                      <td>$35</td>
-                      <td>15/20</td>
-                      <td>Activo</td>
-                      <td>40 hora(s)</td>
-                      <td>
-                        <a class="btn btn-primary btn-sm" href="#">Detalles</a>
-                        <a class="btn btn-secondary btn-sm" href="#">Editar</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>#2</td>
-                      <td>Desarrollo Web</td>
-                      <td>
-                        <a href="#">Jackson Pérez</a>
-                      </td>
-                      <td>$45</td>
-                      <td>15/20</td>
-                      <td>Inscripciones</td>
-                      <td>20 hora(s)</td>
-                      <td>
-                        <a class="btn btn-primary btn-sm" href="#">Detalles</a>
-                        <a class="btn btn-secondary btn-sm" href="#">Editar</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>#3</td>
-                      <td>Excel Básico</td>
-                      <td>
-                        <a href="#">Jackson Pérez</a>
-                      </td>
-                      <td>$20</td>
-                      <td>--/--</td>
-                      <td>Inactivo</td>
-                      <td>30 hora(s)</td>
-                      <td>
-                        <a class="btn btn-primary btn-sm" href="#">Detalles</a>
-                        <a class="btn btn-secondary btn-sm" href="#">Editar</a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="card-footer">
-                <ul class="pagination pagination-sm m-0 d-flex justify-content-center">
-                  <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
-                </ul>
+      <section class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body table-responsive p-0">
+                  <table class="table table-bordered table-hover text-center">
+                    <thead>
+                      <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Instructor</th>
+                        <th>Miembros</th>
+                        <th>Día</th>
+                        <th>Hora</th>
+                        <th>Acciones</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>#1</td>
+                        <td>Basketball</td>
+                        <td>
+                          <a href="#">Luis Pérez</a>
+                        </td>
+                        <td>23</td>
+                        <td>Jueves</td>
+                        <td>8:00 AM a 10:00 AM</td>
+                        <td>
+                          <a class="btn btn-primary btn-sm" href="#">Detalles</a>
+                          <a class="btn btn-secondary btn-sm" href="#">Editar</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#2</td>
+                        <td>Fútbol Campo</td>
+                        <td>
+                          <a href="#">Carlos González</a>
+                        </td>
+                        <td>41</td>
+                        <td>Martes</td>
+                        <td>10:00 AM a 12:00 PM</td>
+                        <td>
+                          <a class="btn btn-primary btn-sm" href="#">Detalles</a>
+                          <a class="btn btn-secondary btn-sm" href="#">Editar</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#3</td>
+                        <td>Fútbol Sala</td>
+                        <td>
+                          <a href="#">Alvaro Martínez</a>
+                        </td>
+                        <td>17</td>
+                        <td>Lunes</td>
+                        <td>9:00 AM a 11:00 AM</td>
+                        <td>
+                          <a class="btn btn-primary btn-sm" href="#">Detalles</a>
+                          <a class="btn btn-secondary btn-sm" href="#">Editar</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="card-footer">
+                  <ul class="pagination pagination-sm m-0 d-flex justify-content-center">
+                    <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

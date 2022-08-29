@@ -127,7 +127,7 @@
       <section class="card p-2 p-sm-3">
         <div class="content-top-layout">
           <h1>Cursos</h1>
-          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#filtersCollapse">
+          <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#filtersCollapse">
             <i class="fas fa-filter"></i>
             <span class="d-none d-sm-inline">Filtros</span>
           </button>
@@ -159,8 +159,10 @@
                   </select>
                   <i class="fas fa-angle-down position-absolute select-icon"></i>
                 </div>
-                <input type="checkbox" name="asignados" id="asignadosCheckbox">
-                <label class="font-weight-normal" for="asignadosCheckbox">Mostrar solo cursos asignados.</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="asignados" id="asignadosCheckbox">
+                  <label class="form-check-label font-weight-normal" for="asignadosCheckbox">Mostrar solo cursos asignados.</label>
+                </div>
               </div>
               <div class="col-md-6 px-5">
                 <h4>Ordenar por: </h4>
@@ -169,8 +171,8 @@
                   <label class="form-check-label" for="dateRadio">Fecha</label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="order" id="dateRadio" value="date">
-                  <label class="form-check-label" for="dateRadio">Nombre</label>
+                  <input class="form-check-input" type="radio" name="order" id="nameRadio" value="name">
+                  <label class="form-check-label" for="nameRadio">Nombre</label>
                 </div>
                 <div class="form-check">
                   <input class="form-check-input" type="radio" name="order" id="durationRadio" value="duration">
