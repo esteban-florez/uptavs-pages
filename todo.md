@@ -1,16 +1,20 @@
 # Cosas por hacer/bugs por corregir.
 
 - Bug de "registro.html".
-- Decidir nomenclatura e idioma para atributos "id, name, value"
+- Decidir nomenclatura e idioma para atributos "id, name, value", y verificar los required y placeholders donde van. En resumen, revisar todos los form.
 - Clase "text" en algunas "p" de los sidebar que no hace nada.
 - Agregar "ascen/descen" en ordenar por.
 - Ver donde coño ponemos el link hacia el registro de áreas de formación.
 - Agregar "name" a las barras de busqueda.
 - Hacer que los "label" tengan fw-normal por defecto. Cambiar todos.
 - Decidir donde poner el link a los ciclos finalizados. 
-- Scrollbar horizontal en "control-matricula.html"
 - Margenes y responsive en filtros de algunas paginas.
 - Pegar este beta en el navbar en todas las paginas: <img src="assets/img/logo-upta.png" alt="Logo de la UPTA" class="brand-image" width="30"><span class="d-none d-sm-inline-block text-muted h5 ml-1 mb-0 mx-0">Departamento de Vinculación Social</span>
+- Quitar el link de Eventos de todos los sidebar.
+- Poner data-search en los select que necesiten.
+- Revisar los title de cada pagina.
+- Agregar link a añadir profesores en registro curso
+
 
 
 - Arreglar el hecho de que un ciclo esté linkeado a un curso, hace que dicho ciclo pueda cambiar parte de sus datos cuando sea editado dicho curso:

@@ -5,14 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>
-    Registrar Curso | Departamento de Vinculación Social
+    Layout Admin | Departamento de Vinculación Social
   </title>  
   <link rel="stylesheet" href="assets/css/all.min.css">
   <link rel="stylesheet" href="assets/css/select2.min.css">
   <link rel="stylesheet" href="assets/css/adminlte.min.css">
   <link rel="stylesheet" href="assets/css/layout.css">
-  <link rel="stylesheet" href="assets/css/imagen-input.css">
-
+  <link rel="stylesheet" href="assets/css/listados.css">
 </head>
 
 <body class="hold-transition sidebar-mini layout-navbar-fixed layout-fixed">
@@ -133,123 +132,115 @@
     </aside>
     <main class="content-wrapper">
       <section class="card p-2 p-sm-3">
-        <h1>Registrar curso</h1>
-        <p class="text-muted m-0 mt-sm-1">Todos los campos son obligatorios</p>
-      </section>
-      <section class="container-fluid">
-        <div class="card mx-sm-3">
-          <div class="card-body">
-            <form method="POST">
-              <div class="row align-items-center">
-                <div class="mb-3 col-sm-4">
-                  <div class="image-input-container" id="previewWrapper">
-                    <span class="badge badge-3 badge-dark position-absolute user-select-none">Click para añadir imagen</span>
-                    <img class="img-cover" src="assets/img/placeholder.jpg" alt="Portada del Club" id="previewImg"> 
-                    <input type="file" name="image" id="imgInput">
-                  </div>
-                </div>
-                <div class="col-sm-6 mb-3">
-                  <label class="form-label" for="course-name">Nombre:</label>
-                  <input class="form-control" type="text" name="courseName" id="course-name" placeholder="Nombre del curso" autocomplete="off" required>
-                </div>
-                <div class="col-sm-6 mb-3">
-                  <label class="form-label" for="instructor">Instructor:</label>
-                  <select class="form-control" name="instructor-type" id="instructor" required>
-                    <option selected>Seleccionar</option>
-                    <option value="Jackson">Ing. Jackson Perez</option>
-                    <option value="Ana">Ing. Ana Garcia</option>
-                    <option value="Anyerg">Ing. Anyerg Martinez</option>
-                    <option value="Elias">Ing. Elias Vargas</option>
-                  </select>
-                </div>
-                <div class="col-sm-6 mb-3">
-                  <label class="form-label" for="area">Area de Formación:</label>
-                  <select class="form-control" name="areaType" id="area" required>
-                    <option selected>Seleccionar</option>
-                    <option value="pnf_informatica">PNF Informatica</option>
-                    <option value="pnf_contaduria">PNF Contaduria</option>
-                    <option value="pnf_electricidad">PNF Electricidad</option>
-                    <option value="pnf_administracion">PNF Administracion</option>
-                    <option></option>
-                  </select>
-                </div>
-                <div class="col-6 col-sm-3 mb-3">
-                  <label class="form-label" for="price">Precio Total:</label>
-                  <div class="input-group">
-                    <input class="form-control w-50" type="number" id="price" name="precio" required/>
-                    <select class="custom-select" name="currency">
-                      <option value="dolares" selected>$</option>
-                      <option value="bolivares">BsD</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-6 col-sm-3 mb-3">
-                  <label class="form-label" for="inscription-price">Precio Inscripción:</label>
-                  <div class="input-group">
-                    <input class="form-control w-50" type="number" id="inscription-price" name="precio"/>
-                    <select class="custom-select" name="currency">
-                      <option value="dolares" selected>$</option>
-                      <option value="bolivares">BsD</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-12 mb-3">
-                  <label class="form-label" for="area">Descripción del Curso:</label>
-                  <textarea class="form-control" name="description" id="description" rows="2" maxlength="2000" required></textarea>
-                </div>
-                <div class="col-12 mb-3">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="plan-course" id="plan-course">
-                    <label class="form-check-label" for="plan-course">Planificar curso</label>
-                  </div>
-                </div>
-                <div class="col-sm-6 mb-3">
-                  <label class="form-label" for="start-date">Inicio de Inscripciones:</label>
-                  <input class="form-control" type="date" name="startDate" id="start-date" disabled>
-                </div>
-                <div class="col-sm-6 mb-3">
-                  <label class="form-label" for="end-date">Fin de Inscripciones:</label>
-                  <input class="form-control" type="date" name="endDate" id="end-date" disabled>
-                </div>
-                <div class="col-sm-6 mb-3">
-                  <label class="form-label" for="start-course">Inicio de Curso:</label>
-                  <input class="form-control" type="date" name="startCourse" id="start-course" disabled>
-                </div>
-                <div class="col-sm-6 mb-3">
-                  <label class="form-label" for="end-course">Fin de Curso:</label>
-                  <input class="form-control" type="date" name="endCourse" id="end-course" disabled>
-                </div>
-                <div class="col-sm-6 mb-3">
-                  <label class="form-label" for="duration">Duración del curso:</label>
-                  <div class="input-group">
-                    <input class="form-control" type="number" id="duration" name="duration" disabled/>
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">horas</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 mb-3">
-                  <label class="form-label" for="student-limit">Max. de Estudiantes:</label>
-                  <input class="form-control" name="student-limit" id="student-limit" type="number" disabled>
-                </div>
-                <div class="col-sm-6 mb-3">
-                  <label class="form-label" for="start-time">Hora de Inicio:</label>
-                  <input class="form-control" type="time" name="startTime" id="start-time" disabled>
-                </div>
-                <div class="col-sm-6 mb-3">
-                  <label class="form-label" for="end-time">Hora de Cierre:</label>
-                  <input class="form-control" type="time" name="endTime" id="end-time" disabled>
-                </div>
+        <div class="d-flex justify-content-between align-items-center">
+          <h1>Historial de inventario</h1>
+          <div class="buttons-wrapper">
+            <div class="dropdown d-inline-block">
+              <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                <i class="fas fa-file-download"></i>
+                <span class="d-none d-md-inline">Reporte</span>
+              </button>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="#">PDF</a>
+                <a class="dropdown-item" href="#">Excel</a>
               </div>
-            </form>
+            </div>
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#filtersCollapse">
+              <i class="fas fa-filter"></i>
+              <span class="d-none d-md-inline">Filtros</span>
+            </button>
           </div>
         </div>
-        <div class="d-flex justify-content-between mb-3 mx-3">
-          <a href="#" class="btn btn-danger">Cancel</a>
-          <button class="btn btn-success" type="button" value="submit">
-            <i class="fas fa-pen mr-1"></i>
-            Crear curso
-          </button>
+        <div class="collapse" id="filtersCollapse">
+          <hr>
+          <form class="container-fluid">
+            <div class="row">
+              <div class="col-md-6 px-5">
+                <h4>Filtrar por: </h4>
+                <label class="font-weight-normal" for="operationSelect">Categoría:</label>
+                <select class="form-control" id="operationSelect" name="operation">
+                  <option value="todos" selected>Todos</option>
+                  <option value="increase">Aumentos?</option>
+                  <option value="decrease">Decremento?</option>
+                </select>
+              </div>
+              <div class="col-md-6 px-5">
+                <h4>Ordenar por: </h4>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="order" id="dateRadio" value="date" checked>
+                  <label class="form-check-label" for="dateRadio">Fecha y hora</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="order" id="nameRadio" value="name">
+                  <label class="form-check-label" for="nameRadio">Nombre</label>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="content">
+        <div class="container-fluid">
+          <div class="card py-2 px-3 mb-0 list-top">
+            <div class="title-wrapper p-1">
+              <h2 class="h3 mb-0 mr-3 text-break">Club de Fútbol</h2>
+            </div>
+            <a class="btn btn-primary" href="#">
+              <i class="fas fa-list"></i>
+              <span>Ver listado de materiales</span>  
+            </a>
+          </div>
+          <div class="card list-bottom">
+            <div class="card-body table-responsive p-0">
+              <table class="table table-bordered text-center mb-0">
+                <thead class="thead-dark">
+                  <tr>
+                    <th>Material</th>
+                    <th>Operación</th>
+                    <th>Resultado</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>Usuario</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Balon de Fútbol</td>
+                    <td class="font-weight-bold text-danger">-12</td>
+                    <td>18</td>
+                    <td>12/02/2022</td>
+                    <td>8:12 AM</td>
+                    <td>Edeblangel Vanegas</td>
+                  </tr>
+                  <tr>
+                    <td>Balon de Fútbol</td>
+                    <td class="font-weight-bold text-success">+2</td>
+                    <td>30</td>
+                    <td>09/02/2022</td>
+                    <td>9:54 AM</td>
+                    <td>Lucas Pérez</td>
+                  </tr>
+                  <tr>
+                    <td>Guantes</td>
+                    <td class="font-weight-bold text-success">+15</td>
+                    <td>15</td>
+                    <td>05/02/2022</td>
+                    <td>11:23 AM</td>
+                    <td>Edeblangel Vanegas</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="card-footer">
+              <ul class="pagination pagination-sm m-0 d-flex justify-content-center">
+                <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -299,7 +290,6 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/select2.min.js"></script>
   <script src="js/adminlte.min.js"></script>
-  <script src="js/imgPreview.js"></script>
   <script src="js/enableSelect2.js"></script>
 </body>
 
