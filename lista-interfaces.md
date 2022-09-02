@@ -14,8 +14,10 @@
 + Ver todos los cursos (FSS). Link a editar. Link a registrar nuevo curso.
 ### Registrar nuevo curso:
 * Formulario para registrar nuevo curso, asignar instructor. Link a registrar área de formación.
-### Registrar area de formacion (maybe modal):
-- Todavía no se donde poner link a esta verga, ahi bere. A lo mejo en configuración gracias mirian por tu ashuda. a tu casa pa'.
+### Areas de formacion:
++ CRUD de las áreas de formación. Bien simple (Se).
+### Registrar area de formacion (modal):
++ Todavía no se donde poner link a esta verga, ahi bere. A lo mejo en configuración gracias mirian por tu ashuda. a tu casa pa'. También servirá pa editar.
 ### Detalle curso:
 * Ver detalles del curso. Editar sus datos. Link a matrícula si es activo.
 ### Control de matrícula:
@@ -27,19 +29,23 @@
 ### Detalle club:
 - Ver detalle del club, editar sus datos. Link a inventario y lista de miembros.
 ### Inventario de club:
-+ Listado de productos, con todos los productos y sus cantidades (FSS).
++ Listado de artículos de club, y sus cantidades (FSS).
 ### Historial de inventario:
 + Todas las operaciones hechas a lo largo de la existencia del inventario (FSo).
+### Artículos del club
+- CRUD simple de artículos (Se).
+### Registrar artículo:
+- Modal, también para editar.
 ### Registrar operacion (maybe modal):
 - El form para registrar un cambio en el inventario.
 ### Lista de miembros club:
-- Literalmente eso, con CRUD y FSS i guess, y enlaces a los perfiles de la gente.
++ Literalmente eso, con CRUD y FSS i guess, y enlaces a los perfiles de la gente.
 ### Pagos:
 + Ver todos los pagos, confirmar y rechazar (FSS).
 ### Estadísticas:
 - Ver estadísticas y gráficas de todo el sistema (FSo).
 ### Configuración:
-- CRUD de datos para pagos, CRUD de usuarios (FSS).
+- CRUD de datos para pagos, CRUD de usuarios (FSS), CRUD de áreas de formación y CRUD de material de club.
 
 
 
@@ -58,9 +64,15 @@ PD: no se si vaya a haber notas de evaluaciones y tal, si ese es el caso, entonc
 ### Detalle club:
 - Editar club asignado, link a inventario del club y listado de miembros.
 ### Inventario de club:
-+ Listado de productos, con todos los productos y sus cantidades (FSS).
++ Listado de artículos del club, y sus cantidades (FSS).
 ### Historial de inventario:
 + Todas las operaciones hechas a lo largo de la existencia del inventario (FSo).
+### Artículos del club
+- CRUD simple de artículos (Se).
+### Registrar artículo:
+- Modal, también para editar.
+### Registrar operacion (maybe modal):
+- El form para registrar un cambio en el inventario.
 ### Lista de miembros club:
 - Literalmente eso, con CRUD y FSS i guess, y enlaces a los perfiles de la gente.
 ### Pagos:
@@ -93,7 +105,7 @@ PD: no se si vaya a haber notas de evaluaciones y tal, si ese es el caso, entonc
 
 
 
-
+producto, bien, artículo, objeto, material, implemento, producto, item, recurso
 
 
 

@@ -5,13 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>
-    Control de Matrícula - Curso de Programación Web | Departamento de Vinculación Social
-  </title>
+    Layout Admin | Departamento de Vinculación Social
+  </title>  
   <link rel="stylesheet" href="assets/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/select2.min.css">
   <link rel="stylesheet" href="assets/css/adminlte.min.css">
   <link rel="stylesheet" href="assets/css/layout.css">
-  <link rel="stylesheet" href="assets/css/listados.css">
 </head>
 
 <body class="hold-transition sidebar-mini layout-navbar-fixed layout-fixed">
@@ -37,10 +35,10 @@
               <div class="media">
                 <div class="media-body">
                   <h3 class="dropdown-item-title">
-                    Nuevo curso asignado
+                    Nuevo pago recibido
                     <span class="float-right text-sm"><i class="fas fa-times"></i></span>
                   </h3>
-                  <p class="text-sm">Curso de Programación Web</p>
+                  <p class="text-sm">Esteban Florez</p>
                   <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> Hace 5 horas</p>
                 </div>
               </div>
@@ -50,10 +48,10 @@
               <div class="media">
                 <div class="media-body">
                   <h3 class="dropdown-item-title">
-                    Fin de inscripciones
+                    Nuevo pago recibido
                     <span class="float-right text-sm"><i class="fas fa-times"></i></span>
                   </h3>
-                  <p class="text-sm">Curso de Diseño Gráfico</p>
+                  <p class="text-sm">Myriam Yaqueno</p>
                   <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> Hace 2 dias</p>
                 </div>
               </div>
@@ -74,11 +72,11 @@
       <div class="sidebar mt-0 h-100">
         <div class="user-panel my-3 pb-3 d-flex align-items-center">
           <div class="image pl-2">
-            <img src="assets/img/excel.jpg" class="img-circle elevation-2" alt="Imagen del usuario">
+            <img src="assets/img/sample1.jpg" class="img-circle elevation-2" alt="Imagen del usuario">
           </div>
           <div class="info">
-            <p class="d-block text-white m-0">Elías Vargas</p>
-            <span class="text-bold text-muted">Instructor</span>
+            <p class="d-block text-white m-0">Edeblangel Vanegas</p>
+            <span class="text-bold text-muted">Administrador</span>
           </div>
         </div>
         <nav class="mt-2">
@@ -107,11 +105,17 @@
                 <p>Pagos</p>
               </a>
             </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-chart-bar"></i>
+                <p class="text">Estadísticas</p>
+              </a>
+            </li>
             <div class="divider"></div>
             <li class="nav-item">
               <a href="#" class="nav-link">
-                <i class="nav-icon fas fa-user"></i>
-                <p>Perfil</p>
+                <i class="nav-icon fas fa-cog"></i>
+                <p class="text">Configuración</p>
               </a>
             </li>
             <li class="nav-item">
@@ -127,18 +131,12 @@
     <main class="content-wrapper">
       <section class="card p-2 p-sm-3">
         <div class="content-top-layout alt-top-layout">
-          <h1>Miembros</h1>
+          <h1>Árticulos</h1>
           <div class="buttons-wrapper">
-            <div class="dropdown d-inline-block">
-              <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
-                <i class="fas fa-file-download"></i>
-                <span class="d-none d-md-inline">Planilla</span>
-              </button>
-              <div class="dropdown-menu dropdown-menu-right">
-                <a class="dropdown-item" href="#">PDF</a>
-                <a class="dropdown-item" href="#">Excel</a>
-              </div>
-            </div>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#newArticleModal">
+              <i class="fas fa-plus"></i>
+              <span class="d-none d-md-inline">Añadir</span>
+            </button>
             <div class="dropdown d-inline-block">
               <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                 <i class="fas fa-sort"></i>
@@ -151,12 +149,12 @@
                     <label class="form-check-label" for="idRadio">ID</label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="order" id="nameRadio" value="name">
-                    <label class="form-check-label" for="nameRadio">Nombre</label>
+                    <input class="form-check-input" type="radio" name="order" id="codeRadio" value="code">
+                    <label class="form-check-label" for="codeRadio">Código</label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="order" id="ciRadio" value="ci">
-                    <label class="form-check-label" for="ciRadio">Cédula</label>
+                    <input class="form-check-input" type="radio" name="order" id="nameRadio" value="name">
+                    <label class="form-check-label" for="nameRadio">Nombre</label>
                   </div>
                 </form>
               </div>
@@ -164,7 +162,7 @@
           </div>
           <form>
             <div class="input-group">
-              <input class="form-control" type="text" placeholder="Buscar estudiante...">
+              <input class="form-control" type="text" placeholder="Buscar artículo...">
               <div class="input-group-append">
                 <button class="btn btn-dark" type="submit">
                   <i class="fas fa-search"></i>
@@ -174,75 +172,55 @@
           </form>
         </div>
       </section>
-      <section class="content">
-        <div class="container-fluid">
-          <div class="card py-2 px-3 mb-0 list-top">
-            <div class="title-wrapper">
-              <h2 class="h3 mb-0 mr-3 text-break">Club de Fútbol</h2>
-              <p class="m-0 h5">17 miembros</p>
-            </div>
-            <button type="button" class="btn btn-success">
-              <i class="fas fa-plus"></i>
-              <span>Añadir miembro</span>
-            </button>
+      <section class="container-fluid">
+        <div class="card">
+          <div class="card-body table-responsive p-0">
+            <table class="table table-bordered table-hover text-center">
+              <thead class="thead-dark">
+                <tr>
+                  <th>ID</th>
+                  <th>Código</th>
+                  <th>Nombre</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#1</td>
+                  <td>4AC1</td>
+                  <td>Balón de Fútbol</td>
+                  <td>
+                    <button type="button" class="btn btn-primary">Editar</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>#1</td>
+                  <td>4AC1</td>
+                  <td>Balón de Fútbol</td>
+                  <td>
+                    <button type="button" class="btn btn-primary">Editar</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>#1</td>
+                  <td>4AC1</td>
+                  <td>Balón de Fútbol</td>
+                  <td>
+                    <button type="button" class="btn btn-primary">Editar</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div class="card list-bottom">
-            <div class="card-body table-responsive p-0">
-              <table class="table table-bordered text-center mb-0">
-                <thead class="thead-dark">
-                  <tr>
-                    <th>ID</th>
-                    <th>Nombre</th>
-                    <th>Cédula</th>
-                    <th>Teléfono</th>
-                    <th>Acciones</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>#1</td>
-                    <td>Luis González</td>
-                    <td>12.345.678</td>
-                    <td>0415-1234567</td>
-                    <td>
-                      <a class="btn btn-primary btn-sm" href="#">Perfil</a>
-                      <a class="btn btn-danger btn-sm" href="#">Retirar</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>#2</td>
-                    <td>Carlos Sánchez</td>
-                    <td>23.456.789</td>
-                    <td>0415-2345678</td>
-                    <td>
-                      <a class="btn btn-primary btn-sm" href="#">Perfil</a>
-                      <a class="btn btn-danger btn-sm" href="#">Retirar</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>#3</td>
-                    <td>Carlos Sánchez</td>
-                    <td>34.567.890</td>
-                    <td>0415-3456789</td>
-                    <td>
-                      <a class="btn btn-primary btn-sm" href="#">Perfil</a>
-                      <a class="btn btn-danger btn-sm" href="#">Retirar</a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="card-footer">
-              <ul class="pagination pagination-sm m-0 d-flex justify-content-center">
-                <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
-              </ul>
-            </div>
+          <div class="card-footer">
+            <ul class="pagination pagination-sm m-0 d-flex justify-content-center">
+              <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+            </ul>
           </div>
-          
         </div>
       </section>
     </main>
@@ -288,13 +266,35 @@
       </div>
     </div>
   </div>
+  <div id="newArticleModal" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Registrar artículo</h4>
+          <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form method="POST">
+            <div class="mb-3">
+              <label for="codeInput">Código: </label>
+              <input class="form-control" type="text" name="code" id="codeInput" placeholder="Escriba el codigo del artículo...">
+            </div>
+            <div class="mb-3">
+              <label for="nameInput">Nombre: </label>
+              <input class="form-control" type="text" name="name" id="nameInput" placeholder="Escribe el nombre del artículo...">
+            </div>
+            <button class="btn btn-danger" type="button" data-dismiss="modal">Cancelar</button>
+            <button class="btn btn-success" type="submit">Aceptar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/select2.min.js"></script>
   <script src="js/adminlte.min.js"></script>
-  <script src="js/enableSelect2.js"></script>
-  <script src="js/approvingSwitch.js"></script>
 </body>
 
 </html>
-
