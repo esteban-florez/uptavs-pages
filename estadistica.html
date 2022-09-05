@@ -5,12 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>
-    Clubes | Departamento de Vinculación Social
-  </title>  
+    Layout Admin | Departamento de Vinculación Social
+  </title>
   <link rel="stylesheet" href="assets/css/all.min.css">
   <link rel="stylesheet" href="assets/css/select2.min.css">
   <link rel="stylesheet" href="assets/css/adminlte.min.css">
   <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/estadistica.css">
 </head>
 
 <body class="hold-transition sidebar-mini layout-navbar-fixed layout-fixed">
@@ -131,144 +132,143 @@
     </aside>
     <main class="content-wrapper">
       <section class="card p-2 p-sm-3">
-        <div class="content-top-layout alt-top-layout">
-          <h1>Clubes</h1>
-          <div class="buttons-wrapper">
-            <button class="btn btn-success" type="button">
-              <i class="fas fa-plus"></i>
-              <span class="d-none d-md-inline">Crear club</span>
-            </button>
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#filtersCollapse">
-              <i class="fas fa-filter"></i>
-              <span class="d-none d-md-inline">Filtros</span>
-            </button>
+        <div class="row no-gutters align-items-center">
+          <div class="col-sm-6 col-md-7">
+            <h1>Estadística</h1>
           </div>
-          <form>
-            <div class="input-group">
-              <input class="form-control" type="text" placeholder="Buscar club...">
-              <div class="input-group-append">
-                <button class="btn btn-dark" type="submit">
-                  <i class="fas fa-search"></i>
-                </button>
+          <div class="col-sm-6 col-md-5">
+            <div class="d-flex align-items-center gap-3 w-100">
+              <h5 class="m-0">Filtrar: </h5>
+              <form class="stats-form" method="POST">
+                <select name="stats" id="statsSelect" data-search="search">
+                  <option value="general">Generales</option>
+                  <option value="1">Programación Web</option>
+                  <option value="2">Diseño Gráfico</option>
+                  <option value="3">Excel Básico</option>
+                </select>
+              </form>
+            </div>
+          </div>
+      </section>
+      <section class="container-fluid">
+        <div class="card card-dark">
+          <div class="card-header">
+            <h3 class="card-title font-weight-bold">Estadísticas Generales</h3>
+            <div class="card-tools">
+              <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                <i class="fas fa-minus"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card-body p-2">
+            <div class="row general-stats-row">
+              <div class="col-lg-3 col-6">
+                <div class="small-box bg-info">
+                  <div class="inner">
+                    <h3>500</h3>
+                    <p class="font-weight-bold">Total de Usuarios</p>
+                  </div>
+                  <div class="icon">
+                    <i class="fas fa-users"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-6">
+                <div class="small-box bg-danger">
+                  <div class="inner">
+                    <h3>5</h3>
+                    <p class="font-weight-bold">Total de Cursos</p>
+                  </div>
+                  <div class="icon">
+                    <i class="fas fa-graduation-cap"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-6">
+                <div class="small-box bg-success">
+                  <div class="inner">
+                    <h3>12k $</h3>
+                    <p class="font-weight-bold">Total de Ingresos</p>
+                  </div>
+                  <div class="icon">
+                    <i class="fas fa-money-bill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-6">
+                <div class="small-box bg-primary">
+                  <div class="inner">
+                    <h3>60%</h3>
+                    <p class="font-weight-bold">Usuarios Inscritos</p>
+                  </div>
+                  <div class="icon">
+                    <i class="fas fa-percent"></i>
+                  </div>
+                </div>
               </div>
             </div>
-          </form>
-        </div>
-        <div class="collapse" id="filtersCollapse">
-          <hr>
-          <form class="container-fluid">
-            <div class="row">
-              <div class="col-md-6 px-5">
-                <h4>Filtrar por: </h4>
-                <label class="font-weight-normal" for="daySelect">Día de actividades: </label>
-                <div class="position-relative">
-                  <select class="form-control" name="day" id="daySelect" multiple>
-                    <option value="monday">Lunes</option>
-                    <option value="tuesday">Martes</option>
-                    <option value="wednesday">Miércoles</option>
-                    <option value="thursday">Jueves</option>
-                    <option value="friday">Viernes</option>
-                    <option value="saturday">Sábado</option>
-                    <option value="sunday">Domingo</option>
-                  </select>
-                  <i class="fas fa-angle-down position-absolute select-icon"></i>
-                </div>
-              </div>
-              <div class="col-md-6 px-5">
-                <h4>Ordenar por: </h4>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="order" id="idRadio" value="id" checked>
-                  <label class="form-check-label" for="idRadio">ID</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="order" id="nameRadio" value="name">
-                  <label class="form-check-label" for="nameRadio">Nombre</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="order" id="hourRadio" value="hour">
-                  <label class="form-check-label" for="hourRadio">Hora</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="order" id="hourRadio" value="hour">
-                  <label class="form-check-label" for="hourRadio">Miembros</label>
-                </div>
-              </div>
-            </div>
-          </form>
+          </div>
         </div>
       </section>
-      <section class="content">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-12">
-              <div class="card">
-                <div class="card-body table-responsive p-0">
-                  <table class="table table-bordered table-hover text-center">
-                    <thead>
-                      <tr>
-                        <th>ID</th>
-                        <th>Nombre</th>
-                        <th>Instructor</th>
-                        <th>Miembros</th>
-                        <th>Día</th>
-                        <th>Hora</th>
-                        <th>Acciones</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>#1</td>
-                        <td>Basketball</td>
-                        <td>
-                          <a href="#">Luis Pérez</a>
-                        </td>
-                        <td>23</td>
-                        <td>Jueves</td>
-                        <td>8:00 AM a 10:00 AM</td>
-                        <td>
-                          <a class="btn btn-primary btn-sm" href="#">Detalles</a>
-                          <a class="btn btn-secondary btn-sm" href="#">Editar</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>#2</td>
-                        <td>Fútbol Campo</td>
-                        <td>
-                          <a href="#">Carlos González</a>
-                        </td>
-                        <td>41</td>
-                        <td>Martes</td>
-                        <td>10:00 AM a 12:00 PM</td>
-                        <td>
-                          <a class="btn btn-primary btn-sm" href="#">Detalles</a>
-                          <a class="btn btn-secondary btn-sm" href="#">Editar</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>#3</td>
-                        <td>Fútbol Sala</td>
-                        <td>
-                          <a href="#">Alvaro Martínez</a>
-                        </td>
-                        <td>17</td>
-                        <td>Lunes</td>
-                        <td>9:00 AM a 11:00 AM</td>
-                        <td>
-                          <a class="btn btn-primary btn-sm" href="#">Detalles</a>
-                          <a class="btn btn-secondary btn-sm" href="#">Editar</a>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+      <section class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Estudiantes inscritos en cursos</h3>
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                    <i class="fas fa-minus"></i>
+                  </button>
                 </div>
-                <div class="card-footer">
-                  <ul class="pagination pagination-sm m-0 d-flex justify-content-center">
-                    <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
-                  </ul>
+              </div>
+              <div class="card-body">
+                <div class="chart">
+                  <canvas id="inscritosChart"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="card card-info">
+              <div class="card-header">
+                <h3 class="card-title">Estudiantes por curso</h3>
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="card-body">
+                <canvas id="porCursoChart"></canvas>
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-md-6">
+            <div class="card card-danger">
+              <div class="card-header">
+                <h3 class="card-title">Ingresos por curso</h3>
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="card-body">
+                <canvas id="ingresosCursoChart"></canvas>
+              </div>
+            </div>
+            <div class="card card-success">
+              <div class="card-header">
+                <h3 class="card-title">Estudiantes aprobados</h3>
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="chart">
+                  <canvas id="aprobadosChart"></canvas>
                 </div>
               </div>
             </div>
@@ -321,8 +321,17 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/select2.min.js"></script>
+  <script src="js/chart.min.js"></script>
   <script src="js/adminlte.min.js"></script>
   <script src="js/enableSelect2.js"></script>
+  <script src="js/charts.js"></script>
+  <script>
+    const span = document.querySelector('#statsSpan');
+    $('select').on('select2:select', () => {
+      const data = $('select').select2('data');
+      span.innerText = data[0].text;
+    })
+  </script>
 </body>
 
 </html>

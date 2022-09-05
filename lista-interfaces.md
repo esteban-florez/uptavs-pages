@@ -4,7 +4,7 @@
 
 + Login. 
 + Registro.
-- Recuperar contraseña. (mirian)
+<!-- - Recuperar contraseña. (mirian) -->
 
 
 
@@ -12,41 +12,43 @@
 
 ### Cursos:
 + Ver todos los cursos (FSS). Link a editar. Link a registrar nuevo curso.
-### Registrar nuevo curso:
-* Formulario para registrar nuevo curso, asignar instructor. Link a registrar área de formación.
+<!-- ### Registrar nuevo curso:
+* Formulario para registrar nuevo curso, asignar instructor. Link a registrar área de formación. -->
 ### Areas de formacion:
 + CRUD de las áreas de formación. Bien simple (Se).
 ### Registrar area de formacion (modal):
-+ Todavía no se donde poner link a esta verga, ahi bere. A lo mejo en configuración gracias mirian por tu ashuda. a tu casa pa'. También servirá pa editar.
-### Detalle curso:
-* Ver detalles del curso. Editar sus datos. Link a matrícula si es activo.
++ Todavía no se donde poner link a esta verga, ahi bere. A lo mejo
+r en configuración gracias mirian por tu ashuda. a tu casa pa'. También servirá pa editar.
+<!-- ### Detalle curso:
+* Ver detalles del curso. Editar sus datos. Link a matrícula si es activo. -->
 ### Control de matrícula:
 + Nota: este es el mismo del instructor, es "matricula.html", así que ya está listo, solo hay que ponerle el layout del admin.
 ### Clubes:
 + Ver todos los clubes, link a editar (FSS). Link a registrar nuevo club.
 ### Registrar nuevo club:
 + Formulario para registrar nuevo club, asignar instructor.
-### Detalle club:
-- Ver detalle del club, editar sus datos. Link a inventario y lista de miembros.
+<!-- ### Detalle club:
+- Ver detalle del club, editar sus datos. Link a inventario y lista de miembros. -->
 ### Inventario de club:
 + Listado de artículos de club, y sus cantidades (FSS).
 ### Historial de inventario:
 + Todas las operaciones hechas a lo largo de la existencia del inventario (FSo).
 ### Artículos del club
-- CRUD simple de artículos (Se).
+* CRUD simple de artículos (Se).
 ### Registrar artículo:
-- Modal, también para editar.
++ Modal, también para editar.
 ### Registrar operacion (maybe modal):
-- El form para registrar un cambio en el inventario.
++ El form para registrar un cambio en el inventario.
 ### Lista de miembros club:
 + Literalmente eso, con CRUD y FSS i guess, y enlaces a los perfiles de la gente.
 ### Pagos:
 + Ver todos los pagos, confirmar y rechazar (FSS).
-### Estadísticas:
-- Ver estadísticas y gráficas de todo el sistema (FSo).
+### Estadística:
+* Ver estadísticas y gráficas de todo el sistema (FSo).
 ### Configuración:
-- CRUD de datos para pagos, CRUD de usuarios (FSS), CRUD de áreas de formación y CRUD de material de club.
-
+- CRUD de datos para pagos, CRUD de usuarios (FSS), CRUD de áreas de formación y CRUD de artículos de club. También el expediente de ciclos terminados.
+### Expediente:
+- Un sitio para ver los ciclos finalizados.
 
 
 
@@ -54,60 +56,53 @@
 
 ### Cursos:
 + Ver todos los cursos. Link a detalles. Link a editar los cursos asignados.
-### Detalle curso:
-- Ver detalles, editar si es curso propio, iniciar inscripciones, designar fechas, etc. Link a matrícula si es propio y activo.
+<!-- ### Detalle curso:
+- Ver detalles, editar si es curso propio, iniciar inscripciones, designar fechas, etc. Link a matrícula si es propio y activo. -->
 ### Control de matrícula:
 + Interfaz pa aprobar y desaprobar gente (FSS). 
 PD: no se si vaya a haber notas de evaluaciones y tal, si ese es el caso, entonces habría que modificar un poco, pero quizas no.
 ### Clubes:
-- Ver clubes, ver y editar clubes asignados.
-### Detalle club:
-- Editar club asignado, link a inventario del club y listado de miembros.
++ Ver clubes, ver y editar clubes asignados (mismo del instructor xd).
+<!-- ### Detalle club:
+- Editar club asignado, link a inventario del club y listado de miembros. -->
 ### Inventario de club:
 + Listado de artículos del club, y sus cantidades (FSS).
 ### Historial de inventario:
 + Todas las operaciones hechas a lo largo de la existencia del inventario (FSo).
-### Artículos del club
-- CRUD simple de artículos (Se).
+### Artículos del club:
+* CRUD simple de artículos (Se).
 ### Registrar artículo:
-- Modal, también para editar.
++ Modal, también para editar.
 ### Registrar operacion (maybe modal):
-- El form para registrar un cambio en el inventario.
++ El form para registrar un cambio en el inventario.
 ### Lista de miembros club:
-- Literalmente eso, con CRUD y FSS i guess, y enlaces a los perfiles de la gente.
-### Pagos:
-- Ver tabla de usuarios pertenecientes a un determinado curso, donde se muestre su solvencia.
++ Literalmente eso, con CRUD y FSS i guess, y enlaces a los perfiles de la gente.
 ### Perfil:
 - Perfil de usuario propio, con datos personales, y estadísticas de uso del sistema, editar datos, etc.
-
-
+### Horario (a lo mejor no):
+- Literalmente eso, un horario que muestre de una manera gráfica que días y horas te toca club y curso en la semana.
 
 
 ## Estudiante:
 
 ### Cursos:
 + Ver cursos en período de inscripción (FSS). Link a detalles de cada curso.
-### Detalle de curso:
-+ Ver detalles de curso, inscribirse.
+<!-- ### Detalle de curso:
++ Ver detalles de curso, inscribirse. -->
 ### Inscripcion:
-- Pasos para inscripcion en curso.
+* Pasos para inscripcion en curso.
 ### Clubes:
 - Ver clubes, link a detalles de club.
-##### Detalle de club:
-- Ver detalles de club, inscribirse.
+<!-- ##### Detalle de club:
+- Ver detalles de club, inscribirse. -->
 ### Pagos:
 * Dos tabs: la primera con un CRUD de pagos realizados, y la segunda con cuotas pendientes y un link a pagar dichas cuotas.
 ### Pago de cuotas pendientes:
 - Basada en inscripcion, pero solo para pagar una cuota.
 ### Perfil:
 - Perfil de usuario con datos propios y estadísticas de uso del sistema. Editar datos.
-
-
-
-
-producto, bien, artículo, objeto, material, implemento, producto, item, recurso
-
-
+### Horario (a lo mejor no):
+- Literalmente eso, un horario que muestre de una manera gráfica que días y horas te toca club y curso en la semana.
 
 
 

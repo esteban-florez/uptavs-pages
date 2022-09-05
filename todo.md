@@ -1,6 +1,8 @@
 # Cosas por hacer/bugs por corregir.
 
+- Cuando toooodo este listo, ver cada una de las cosas que están en layout, y si alguna se usa en solo un archivo, sacarla a un archivo aparte. Igual en listados.
 - Si es posible, mejorar la interfaz de artículos.
+- Rework a pagos, con dos tabs tanto en admin como en user, y no se si en instructor.
 - Bug de "registro.html".
 - Decidir nomenclatura e idioma para atributos "id, name, value", y verificar los required y placeholders donde van. En resumen, revisar todos los form.
 - Clase "text" en algunas "p" de los sidebar que no hace nada.
@@ -25,6 +27,7 @@
 - Arreglar el hecho de que un ciclo esté linkeado a un curso, hace que dicho ciclo pueda cambiar parte de sus datos cuando sea editado dicho curso:
   - Opción 1: hacer que el ciclo no tenga el id del curso, sino que tome todos sus datos dentro de su propia tabla. Lo chimbo es la duplicación de información.
   - Opción 2: hacer que el ciclo tenga el id del curso, y al momento de finalizar se mueva el ciclo a una tabla de ciclos finalizados, teniendo en ese caso si los datos del curso. Igual se duplica la info, pero un poquititititito menos.
+  - Opción 3: se me está ocurriendo buscar un mecanismo para que la referencia del ciclo finalizado al curso, *detecte* el cambio en el curso al que referencia y cree un registro con los datos anteriores al cambio, para así mantener sus datos originales. O algo así.
 
 - También ocurre que los cursos y clubes podrían no ser solamente un día a la semana, sino multiples, y cada día quizas tendría horas propias. Una solucion es implementar lo del horario de forma mas compleja, con Drag'n Drop maybe.
 
