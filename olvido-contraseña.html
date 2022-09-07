@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    Olvido de contraseña | Departamento de Vinculación Social
+  </title>
+  <link rel="stylesheet" href="assets/css/adminlte.min.css">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/layout-bg-upta.css">
+</head>
+
+<body class="login-page h-100">
+  <div class="overlay"></div>
+  <div class="login-box my-3">
+    <div class="bg-white rounded-circle logo-container my-2 shadow">
+      <img width="60" height="60" src="assets/img/logo-upta.png">
+    </div>
+    <div class="login-logo">
+      <h1 class="font-weight-normal text-white">¿Olvidó su contraseña?</h1>
+    </div>
+    <div class="card">
+      <div class="card-body login-card-body">
+        <p class="login-box-msg">Por favor ingrese su correo electrónico para recibir un código de verificación.</p>
+        <form action="verificar-codigo.html" method="POST">
+          <div class="input-group mb-3">
+            <input type="email" class="form-control" placeholder="Correo electrónico">
+            <div class="input-group-append">
+              <div class="input-group-text bg-white">
+                <span class="fa fa-envelope"></span>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Enviar correo</button>
+        </form>
+        <hr>
+        <a href="login.html" class="text-dark">
+          <i class="far fa-arrow-alt-circle-left"></i>
+          <span>Volver</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/adminlte.min.js"></script>
+</body>
+
+</html>

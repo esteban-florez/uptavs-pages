@@ -4,7 +4,7 @@
 
 + Login. 
 + Registro.
-<!-- - Recuperar contraseña. (mirian) -->
++ Recuperar contraseña. (mirian)
 
 
 
@@ -12,8 +12,8 @@
 
 ### Cursos:
 + Ver todos los cursos (FSS). Link a editar. Link a registrar nuevo curso.
-<!-- ### Registrar nuevo curso:
-* Formulario para registrar nuevo curso, asignar instructor. Link a registrar área de formación. -->
+### Registrar nuevo curso:
+* Formulario para registrar nuevo curso, asignar instructor. Link a registrar área de formación.
 ### Areas de formacion:
 + CRUD de las áreas de formación. Bien simple (Se).
 ### Registrar area de formacion (modal):
@@ -44,7 +44,7 @@ r en configuración gracias mirian por tu ashuda. a tu casa pa'. También servir
 ### Pagos:
 + Ver todos los pagos, confirmar y rechazar (FSS).
 ### Estadística:
-* Ver estadísticas y gráficas de todo el sistema (FSo).
++ * Ver estadísticas y gráficas de todo el sistema (FSo).
 ### Configuración:
 - CRUD de datos para pagos, CRUD de usuarios (FSS), CRUD de áreas de formación y CRUD de artículos de club. También el expediente de ciclos terminados.
 ### Expediente:
