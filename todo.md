@@ -21,6 +21,7 @@
 - Clase "thead-dark" en todos los thead
 - Rows con col-12 y mas nada adentro en algunas interfaces de tablas.
 - Paginaciones que faltan en ciertas interfaces
+- Actualizar sidebar con todos los links necesarios.
 
 # Cosas mas como de arquitectura que hay que decidir/solucionar:
 

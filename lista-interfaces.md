@@ -4,7 +4,7 @@
 
 + Login. 
 + Registro.
-+ Recuperar contraseña. (mirian)
++ Recuperar contraseña.
 
 
 
@@ -13,7 +13,7 @@
 ### Cursos:
 + Ver todos los cursos (FSS). Link a editar. Link a registrar nuevo curso.
 ### Registrar nuevo curso:
-* Formulario para registrar nuevo curso, asignar instructor. Link a registrar área de formación.
++ Formulario para registrar nuevo curso, asignar instructor. Link a registrar área de formación.
 ### Areas de formacion:
 + CRUD de las áreas de formación. Bien simple (Se).
 ### Registrar area de formacion (modal):
@@ -45,10 +45,16 @@ r en configuración gracias mirian por tu ashuda. a tu casa pa'. También servir
 + Ver todos los pagos, confirmar y rechazar (FSS).
 ### Estadística:
 + * Ver estadísticas y gráficas de todo el sistema (FSo).
-### Configuración:
-- CRUD de datos para pagos, CRUD de usuarios (FSS), CRUD de áreas de formación y CRUD de artículos de club. También el expediente de ciclos terminados.
+### Información de pagos:
++ CRUD de datos para pago. 
+### Usuarios:
++ CRUD de usuarios del sistema (FSS).
+### Registro de usuario:
++ Basicamente copypastear el registro pero con el layout de admin xd. Y ponerle el poder seleccionar el tipo de usuario.
 ### Expediente:
-- Un sitio para ver los ciclos finalizados.
++ Un sitio para ver los ciclos finalizados.
+### Detalle expediente:
++ Detalles del expediente y resumen de la matricula.
 
 
 
@@ -77,8 +83,8 @@ PD: no se si vaya a haber notas de evaluaciones y tal, si ese es el caso, entonc
 + El form para registrar un cambio en el inventario.
 ### Lista de miembros club:
 + Literalmente eso, con CRUD y FSS i guess, y enlaces a los perfiles de la gente.
-### Perfil:
-- Perfil de usuario propio, con datos personales, y estadísticas de uso del sistema, editar datos, etc.
+<!-- ### Perfil:
+- Perfil de usuario propio, con datos personales, y estadísticas de uso del sistema, editar datos, etc. -->
 ### Horario (a lo mejor no):
 - Literalmente eso, un horario que muestre de una manera gráfica que días y horas te toca club y curso en la semana.
 
@@ -99,8 +105,8 @@ PD: no se si vaya a haber notas de evaluaciones y tal, si ese es el caso, entonc
 * Dos tabs: la primera con un CRUD de pagos realizados, y la segunda con cuotas pendientes y un link a pagar dichas cuotas.
 ### Pago de cuotas pendientes:
 - Basada en inscripcion, pero solo para pagar una cuota.
-### Perfil:
-- Perfil de usuario con datos propios y estadísticas de uso del sistema. Editar datos.
+<!-- ### Perfil:
+- Perfil de usuario con datos propios y estadísticas de uso del sistema. Editar datos. -->
 ### Horario (a lo mejor no):
 - Literalmente eso, un horario que muestre de una manera gráfica que días y horas te toca club y curso en la semana.
 
