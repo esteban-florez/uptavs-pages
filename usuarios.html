@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    Layout Admin | Departamento de Vinculación Social
+  </title>  
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/adminlte.min.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+</head>
+
+<body class="hold-transition sidebar-mini layout-navbar-fixed layout-fixed">
+  <div class="wrapper">
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="navbar-brand d-flex align-items-center justify-content-between">
+          <img src="assets/img/logo-upta.png" alt="Logo de la UPTA" class="brand-image" width="35">
+          <span class="d-none d-sm-inline-block text-muted h5 m-2">Departamento de Vinculación Social</span>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-bell navbar-icon"></i>
+            <span class="badge badge-danger navbar-badge">2</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <a href="#" class="dropdown-item">
+              <div class="media">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    Nuevo pago recibido
+                    <span class="float-right text-sm"><i class="fas fa-times"></i></span>
+                  </h3>
+                  <p class="text-sm">Esteban Florez</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> Hace 5 horas</p>
+                </div>
+              </div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <div class="media">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    Nuevo pago recibido
+                    <span class="float-right text-sm"><i class="fas fa-times"></i></span>
+                  </h3>
+                  <p class="text-sm">Myriam Yaqueno</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> Hace 2 dias</p>
+                </div>
+              </div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item dropdown-footer">Ver todas las notificaciones</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" role="button" data-toggle="modal" data-target="#infoModal">
+            <i class="fas fa-info-circle mr-1"></i>
+            <span class="d-none d-md-inline">Contáctanos</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <div class="sidebar mt-0 h-100">
+        <div class="user-panel my-3 pb-3 d-flex align-items-center">
+          <div class="image pl-2">
+            <img src="assets/img/sample1.jpg" class="img-circle elevation-2" alt="Imagen del usuario">
+          </div>
+          <div class="info">
+            <p class="d-block text-white m-0">Edeblangel Vanegas</p>
+            <span class="text-bold text-muted">Administrador</span>
+          </div>
+        </div>
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" role="menu">
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-graduation-cap"></i>
+                <p>Cursos</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-archway"></i>
+                <p>Clubes</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-users"></i>
+                <p>Eventos</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-money-bill"></i>
+                <p>Pagos</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-chart-bar"></i>
+                <p class="text">Estadísticas</p>
+              </a>
+            </li>
+            <div class="divider"></div>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-cog"></i>
+                <p class="text">Configuración</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-sign-out-alt"></i>
+                <p>Cerrar Sesión</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <main class="content-wrapper">
+      <section class="card p-2 p-sm-3">
+        <div class="content-top-layout alt-top-layout">
+          <h1>Usuarios</h1>
+          <div class="buttons-wrapper">
+            <button type="button" class="btn btn-success">
+              <i class="fas fa-plus"></i>
+              <span class="d-none d-md-inline">Nuevo</span>
+            </button>
+            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#filtersCollapse">
+              <i class="fas fa-filter"></i>
+              <span class="d-none d-md-inline">Filtros</span>
+            </button>
+          </div>
+          <form>
+            <div class="input-group">
+              <input class="form-control" type="text" placeholder="Buscar usuario...">
+              <div class="input-group-append">
+                <button class="btn btn-dark" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="collapse" id="filtersCollapse">
+          <hr>
+          <form class="container-fluid">
+            <div class="row">
+              <div class="col-md-6 px-5">
+                <h4>Filtrar por: </h4>
+                <label class="font-weight-normal" for="rolSelect">Rol:</label>
+                <select class="form-control" id="rolSelect" name="rol">
+                  <option value="todos" selected>Todos</option>
+                  <option value="estudiante">Estudiante</option>
+                  <option value="instructor">Instructor</option>
+                </select>
+                <label class="font-weight-normal mt-3" for="uptaSelect">Estudiante de la UPTA:</label>
+                <select class="form-control" id="uptaSelect" name="upta">
+                  <option value="todos" selected>Todos</option>
+                  <option value="si">Sí</option>
+                  <option value="no">No</option>
+                </select>
+              </div>
+              <div class="col-md-6 px-5">
+                <h4>Ordenar por: </h4>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="order" id="idRadio" value="id" checked>
+                  <label class="form-check-label" for="idRadio">ID</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="order" id="usernameRadio" value="username">
+                  <label class="form-check-label" for="usernameRadio">Usuario</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="order" id="nameRadio" value="name">
+                  <label class="form-check-label" for="nameRadio">Nombre</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="order" id="ciRadio" value="ci">
+                  <label class="form-check-label" for="ciRadio">Cédula</label>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="container-fluid">
+        <div class="card">
+          <div class="card-body table-responsive p-0">
+            <table class="table table-bordered text-center mb-0">
+              <thead class="thead-dark">
+                <tr>
+                  <th>ID</th>
+                  <th>Usuario</th>
+                  <th>Nombre</th>
+                  <th>Cédula</th>
+                  <th>Teléfono</th>
+                  <th>Correo</th>
+                  <th>Rol</th>
+                  <th>¿UPTA?</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#1</td>
+                  <td>@luis.g</td>
+                  <td>Luis González</td>
+                  <td>12.345.678</td>
+                  <td>0415-1234567</td>
+                  <td>luisg@example.com</td>
+                  <td>Estudiante</td>
+                  <td>Sí</td>
+                  <td>
+                    <a class="btn btn-primary btn-sm" href="#">Perfil</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>#2</td>
+                  <td>@carlos.san</td>
+                  <td>Carlos Sánchez</td>
+                  <td>23.456.789</td>
+                  <td>0415-2345678</td>
+                  <td>carlos@example.com</td>
+                  <td>Instructor</td>
+                  <td>--</td>
+                  <td>
+                    <a class="btn btn-primary btn-sm" href="#">Perfil</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>#3</td>
+                  <td>@tkcfamily</td>
+                  <td>Esteban Florez</td>
+                  <td>31.342.325</td>
+                  <td>0412-8970019</td>
+                  <td>rajastabiricara@gmail.com</td>
+                  <td>Papasito</td>
+                  <td>Sí</td>
+                  <td>
+                    <a class="btn btn-primary btn-sm" href="#">Perfil</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="card-footer">
+            <ul class="pagination pagination-sm m-0 d-flex justify-content-center">
+              <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <div id="infoModal" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Contáctanos</h4>
+          <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h5>Redes Sociales: </h5>
+          <ul class="d-flex list-unstyled">
+            <li class="mr-3">
+              <a href="#">
+                <i class="fab fa-facebook"></i>
+                Facebook
+              </a>
+            </li>
+            <li class="mr-3">
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+                Twitter
+              </a>
+            </li>
+            <li class="mr-3">
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+                Instagram
+              </a>
+            </li>
+          </ul>
+          <h5>Contacto: </h5>
+          <p>04XX-XXX-XXXX - correoupta@example.com</p>
+        </div>
+        <div class="modal-footer justify-content-between">
+          <span class="float-left">UPTA "Federico Brito Figueroa" | 2022</span>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/adminlte.min.js"></script>
+</body>
+
+</html>

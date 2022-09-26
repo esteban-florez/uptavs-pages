@@ -100,6 +100,12 @@ h1 {
   margin-bottom: 0;
 }
 
+span.fas,
+span.far,
+span.fab {
+  pointer-events: none;
+}
+
 @media screen and (min-width: 576px) {
   h1 {
     margin-top: 0;

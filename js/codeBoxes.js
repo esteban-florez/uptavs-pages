@@ -1,33 +1,32 @@
-const getFirstEmptyBox = boxes => boxes.find(box => box.value.length === 0);
+const input = document.querySelector('#codeInput');
+const spans = document.querySelectorAll('.box');
+const boxes = [...spans];
 
-const boxes = document.querySelectorAll('form input');
-const boxesArr = Array.from(boxes.values());
+document.addEventListener('keydown', e => console.log(e))
 
-function lockBoxes() {
-	const firstEmptyBox = getFirstEmptyBox(boxesArr) ?? boxesArr[3];
-	boxesArr.forEach(box => {
-		if(box === firstEmptyBox) {
-			box.style.pointerEvents = 'all';
-			return;
-		}
-		box.style.pointerEvents = 'none';
-	})
+boxes.forEach(box => box.addEventListener('click', () => input.focus()));
+
+input.addEventListener('focus', setCursor);
+input.addEventListener('input', setCursor);
+input.addEventListener('input', updateBoxesValues);
+input.addEventListener('blur', removeFocus);
+
+function removeFocus() {
+	boxes.forEach(box => box.classList.remove('box-selected'));
 }
 
-function moveCursor(e) {
-	const boxNum = boxesArr.indexOf(this);
-	
-	if(e.inputType === 'insertText') {
-		boxesArr[boxNum + 1]?.focus();
-	} else {
-		boxesArr[boxNum - 1]?.focus();
-	}
-
-	lockBoxes();
+function updateBoxesValues() {
+	boxes.forEach(box => box.innerText = '');
+	const code = this.value;
+	const chars = code.split(''); 
+	chars.forEach((char, i) => {
+		boxes[i].innerText = char;
+	});
 }
 
-boxesArr.forEach(box => {
-	box.addEventListener('input', moveCursor)
-});
-
-lockBoxes();
+function setCursor() {
+	let pos = this.value.length;
+	removeFocus();
+	if(pos === 4) pos = 3;
+	boxes[pos].classList.add('box-selected');
+}

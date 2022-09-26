@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="assets/css/adminlte.min.css">
   <link rel="stylesheet" href="assets/css/all.min.css">
   <link rel="stylesheet" href="assets/css/layout-bg-upta.css">
+  <link rel="stylesheet" href="assets/css/verificar-codigo.css">
 </head>
 
 <body class="login-page h-100">
@@ -25,11 +26,12 @@
       <div class="card-body login-card-body">
         <p class="login-box-msg">Por favor ingrese el código de 4 digitos que se envió a su correo electrónico.</p>
         <form action="nueva-contraseña.html" method="POST">
-          <div class="d-flex justify-content-center mb-3">
-            <input type="text" class="form-control text-center bg-light mx-2 mx-sm-3" maxlength="1" autocomplete="off">
-            <input type="text" class="form-control text-center bg-light mx-2 mx-sm-3" maxlength="1" autocomplete="off">
-            <input type="text" class="form-control text-center bg-light mx-2 mx-sm-3" maxlength="1" autocomplete="off">
-            <input type="text" class="form-control text-center bg-light mx-2 mx-sm-3" maxlength="1" autocomplete="off">
+          <input class="hidden-input" type="text" inputmode="numeric" name="code" id="codeInput" maxlength="4">
+          <div class="d-flex justify-content-center mb-3 boxes-container">
+            <span class="box"></span>
+            <span class="box"></span>
+            <span class="box"></span>
+            <span class="box"></span>
           </div>
           <button type="submit" class="btn btn-primary btn-block mb-3">Verificar</button>
         </form>
@@ -48,7 +50,6 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/adminlte.min.js"></script>
-  <!-- <script src="js/forgot-password.js"></script> -->
   <script src="js/codeBoxes.js"></script>
 </body>
 

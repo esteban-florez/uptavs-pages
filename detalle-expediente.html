@@ -5,14 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>
-    Registrar Curso | Departamento de Vinculación Social
+    Layout Admin | Departamento de Vinculación Social
   </title>  
   <link rel="stylesheet" href="assets/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/select2.min.css">
   <link rel="stylesheet" href="assets/css/adminlte.min.css">
   <link rel="stylesheet" href="assets/css/layout.css">
-  <link rel="stylesheet" href="assets/css/imagen-input.css">
-
 </head>
 
 <body class="hold-transition sidebar-mini layout-navbar-fixed layout-fixed">
@@ -133,126 +130,114 @@
     </aside>
     <main class="content-wrapper">
       <section class="card p-2 p-sm-3">
-        <h1>Registrar curso</h1>
-        <p class="text-muted m-0 mt-sm-1">Todos los campos son obligatorios</p>
+        <h1>Programación Web</h1>
+        <p class="h5 text-muted m-0 mt-sm-1">Información del expediente </p>
       </section>
       <section class="container-fluid">
-        <div class="card mx-sm-3">
-          <div class="card-body">
-            <form method="GET">
-              <div class="row align-items-center">
-                <div class="col-sm-6 col-md-4">
-                  <div class="image-input-container" id="previewWrapper">
-                    <span class="badge badge-3 badge-dark position-absolute user-select-none">Click para añadir imagen</span>
-                    <img class="img-cover" src="assets/img/placeholder.jpg" alt="Portada del Club" id="previewImg"> 
-                    <input type="file" name="image" id="imgInput">
-                  </div>
-                </div>
-                <div class="col-sm-6 col-md-8">
-                  <div class="mb-3">
-                    <label class="form-label" for="course-name">Nombre:</label>
-                    <input class="form-control" type="text" name="courseName" id="course-name" placeholder="Nombre del curso" autocomplete="off" required>
-                  </div>
-                  <div class="mb-3">
-                    <label class="form-label" for="instructor">Instructor:</label>
-                    <select class="form-control" name="instructor-type" id="instructor" required>
-                      <option selected>Seleccionar</option>
-                      <option value="Jackson">Ing. Jackson Perez</option>
-                      <option value="Ana">Ing. Ana Garcia</option>
-                      <option value="Anyerg">Ing. Anyerg Martinez</option>
-                      <option value="Elias">Ing. Elias Vargas</option>
-                    </select>
-                  </div>
-                  <div class="mb-3">
-                    <label class="form-label" for="area">Area de Formación:</label>
-                    <select class="form-control" name="areaType" id="area" required>
-                      <option selected>Seleccionar</option>
-                      <option value="pnf_informatica">PNF Informatica</option>
-                      <option value="pnf_contaduria">PNF Contaduria</option>
-                      <option value="pnf_electricidad">PNF Electricidad</option>
-                      <option value="pnf_administracion">PNF Administracion</option>
-                      <option></option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 mb-3">
-                  <label class="form-label" for="price">Precio Total:</label>
-                  <div class="input-group flex-nowrap">
-                    <input class="form-control" type="number" id="price" name="precio" required/>
-                    <div class="input-group-append">
-                      <span class="input-group-text" id="basic-addon1">$</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 mb-3">
-                  <label class="form-label" for="inscription-price">Precio de Inscripción:</label>
-                  <div class="input-group flex-nowrap">
-                    <input class="form-control w-50" type="number" id="inscription-price" name="precio"/>
-                    <div class="input-group-append">
-                      <span class="input-group-text" id="basic-addon1">$</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 mb-3">
-                  <label class="form-label" for="area">Descripción del Curso:</label>
-                  <textarea class="form-control" name="description" id="description" rows="2" maxlength="2000" required></textarea>
-                </div>
-                <div class="col-12 mb-3">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="plan-course" id="plan-course">
-                    <label class="form-check-label" for="plan-course">Planificar curso</label>
-                  </div>
-                </div>
-                <div class="col-sm-6 mb-3">
-                  <label class="form-label" for="start-date">Inicio de Inscripciones:</label>
-                  <input class="form-control" type="date" name="startDate" id="start-date" disabled>
-                </div>
-                <div class="col-sm-6 mb-3">
-                  <label class="form-label" for="end-date">Fin de Inscripciones:</label>
-                  <input class="form-control" type="date" name="endDate" id="end-date" disabled>
-                </div>
-                <div class="col-sm-6 mb-3">
-                  <label class="form-label" for="start-course">Inicio de Curso:</label>
-                  <input class="form-control" type="date" name="startCourse" id="start-course" disabled>
-                </div>
-                <div class="col-sm-6 mb-3">
-                  <label class="form-label" for="end-course">Fin de Curso:</label>
-                  <input class="form-control" type="date" name="endCourse" id="end-course" disabled>
-                </div>
-                <div class="col-sm-6 mb-3">
-                  <label class="form-label" for="duration">Duración del curso:</label>
-                  <div class="input-group">
-                    <input class="form-control" type="number" id="duration" name="duration" disabled/>
-                    <div class="input-group-append">
-                      <span class="input-group-text">horas</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 mb-3">
-                  <label class="form-label" for="student-limit">Max. de Estudiantes:</label>
-                  <input class="form-control" name="student-limit" id="student-limit" type="number" disabled>
-                </div>
-                <div class="col-sm-6 mb-3">
-                  <label class="form-label" for="start-time">Hora de Inicio:</label>
-                  <input class="form-control" type="time" name="startTime" id="start-time" disabled>
-                </div>
-                <div class="col-sm-6 mb-3">
-                  <label class="form-label" for="end-time">Hora de Cierre:</label>
-                  <input class="form-control" type="time" name="endTime" id="end-time" disabled>
+        <div class="row">
+          <div class="col-xl-6">
+            <div class="card card-dark"> 
+              <div class="card-header">
+                <h3 class="m-0 text-center float-left">Detalles</h3>
+                <div class="card-tools d-xl-none">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                    <i class="fas fa-minus"></i>
+                  </button>
                 </div>
               </div>
-              <div class="d-flex justify-content-between align-items-center">
-                <button class="btn btn-danger">
-                  <i class="fas fa-times"></i>
-                  <span>Cancelar</span>
-                </button>
-                <button class="btn btn-success">
-                  <i class="fas fa-check"></i>
-                  <span>Aceptar</span>
-                </button>
+              <div class="card-body">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <div class="d-flex justify-content-between gap-2">
+                      <h6 class="m-0 text-primary">Inscripciones:</h6>
+                      <p class="m-0 text-break text-right">11-03-2022 al 18-03-2022</p>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="d-flex justify-content-between gap-2">
+                      <h6 class="m-0 text-primary">Clases:</h6>
+                      <p class="m-0 text-break text-right">21-03-2022 al 21-05-2022</p>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="d-flex justify-content-between gap-2">
+                      <h6 class="m-0 text-primary">Fecha de cierre:</h6>
+                      <p class="m-0 text-break text-right">24-05-2022</p>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="d-flex justify-content-between gap-2">
+                      <h6 class="m-0 text-primary">Día(s):</h6>
+                      <p class="m-0 text-break text-right">Martes y Jueves</p>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="d-flex justify-content-between gap-2">
+                      <h6 class="m-0 text-primary">Hora:</h6>
+                      <p class="m-0 text-break text-right">8:00 AM a 12:00 PM</p>
+                    </div>
+                  </li>
+                </ul>
               </div>
-            </form>
             </div>
+          </div>
+          <div class="col-xl-6">
+            <div class="card card-dark">
+              <div class="card-header">
+                <h3 class="m-0">Matrícula</h3>
+              </div> 
+              <div class="card-body table-responsive">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr class="border-top">
+                      <th>Nombre</th>
+                      <th>Solvencia</th>
+                      <th>¿Aprobado?</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Esteban Florez</td>
+                      <td>Sí</td>
+                      <td class="text-success font-weight-bold">Sí</td>
+                    </tr>
+                    <!-- <tr>
+                      <td>Katherine Jimenez</td>
+                      <td>No, me debes un beso xD!!</td>
+                      <td class="text-success font-weight-bold">Por supuesto miamor</td>
+                    </tr> -->
+                    <tr>
+                      <td>Allan Gonzalez</td>
+                      <td>No</td>
+                      <td class="text-danger font-weight-bold">No</td>
+                    </tr>
+                    <tr>
+                      <td>Esteban Florez</td>
+                      <td>Sí</td>
+                      <td class="text-success font-weight-bold">Sí</td>
+                    </tr>
+                    <tr>
+                      <td>Allan Gonzalez</td>
+                      <td>No</td>
+                      <td class="text-danger font-weight-bold">No</td>
+                    </tr>
+                    <tr>
+                      <td>Esteban Florez</td>
+                      <td>Sí</td>
+                      <td class="text-success font-weight-bold">Sí</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="card-footer clearfix">
+                <ul class="pagination pagination-sm m-0 float-right">
+                  <li class="page-item"><a class="page-link" href="#">«</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">»</a></li>
+                </ul>
+              </div>
           </div>
         </div>
       </section>
@@ -301,11 +286,7 @@
   </div>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/select2.min.js"></script>
   <script src="js/adminlte.min.js"></script>
-  <script src="js/imgPreview.js"></script>
-  <script src="js/enableSelect2.js"></script>
-  <script src="js/coursePlan.js"></script>
 </body>
 
 </html>
