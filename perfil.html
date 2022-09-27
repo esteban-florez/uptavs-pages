@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    Perfil | Departamento de Vinculación Social
+  </title>
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/adminlte.min.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/perfil.css">
+</head>
+
+<body class="hold-transition sidebar-mini layout-navbar-fixed layout-fixed">
+  <div class="wrapper">
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="navbar-brand d-flex align-items-center justify-content-between">
+          <img src="assets/img/logo-upta.png" alt="Logo de la UPTA" class="brand-image" width="35">
+          <span class="d-none d-sm-inline-block text-muted h5 m-2">Departamento de Vinculación Social</span>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-bell navbar-icon"></i>
+            <span class="badge badge-danger navbar-badge">2</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <a href="#" class="dropdown-item">
+              <div class="media">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    Inscripción confirmada
+                    <span class="float-right text-sm"><i class="fas fa-times"></i></span>
+                  </h3>
+                  <p class="text-sm">Curso de Desarrollo Web</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> Hace 5 horas</p>
+                </div>
+              </div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">
+              <div class="media">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    Aprobación de curso
+                    <span class="float-right text-sm"><i class="fas fa-times"></i></span>
+                  </h3>
+                  <p class="text-sm">Curso de Diseño Gráfico</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> Hace 2 dias</p>
+                </div>
+              </div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item dropdown-footer">Ver todas las notificaciones</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" role="button" data-toggle="modal" data-target="#infoModal">
+            <i class="fas fa-info-circle mr-1"></i>
+            <span class="d-none d-md-inline">Contáctanos</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <div class="sidebar mt-0 h-100">
+        <div class="user-panel my-3 pb-3 d-flex align-items-center">
+          <div class="image pl-2">
+            <img src="assets/img/rudy.jpg" class="img-circle elevation-2" alt="Imagen del usuario">
+          </div>
+          <div class="info">
+            <p class="d-block text-white m-0">Esteban Florez</p>
+            <span class="text-bold text-muted">Estudiante</span>
+          </div>
+        </div>
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" role="menu">
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-graduation-cap"></i>
+                <p>Cursos</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-archway"></i>
+                <p>Clubes</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-users"></i>
+                <p>Eventos</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-money-bill"></i>
+                <p>Pagos</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-calendar-alt"></i>
+                <p class="text">Horario</p>
+              </a>
+            </li>
+            <div class="divider"></div>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-user"></i>
+                <p class="text">Perfil</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-sign-out-alt"></i>
+                <p>Cerrar Sesión</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <main class="content-wrapper">
+      <section class="card p-2 p-sm-3">
+        <h1>Mi Perfil</h1>
+      </section>
+      <section class="container-fluid">
+        <div class="row no-gutters">
+          <div class="col-md-5 col-xl-4">
+            <div class="card card-widget widget-user card-profile mb-3 mx-2">
+              <div class="widget-user-header bg-primary">
+                <h3 class="widget-user-username">Rudy Hoshi &lt;3</h3>
+                <h5 class="widget-user-desc">Estudiante</h5>
+              </div>
+              <div class="widget-user-image">
+                <img class="img-circle elevation-2 profile-img" src="assets/img/rudy.jpg" alt="User Avatar">
+              </div>
+              <div class="card-footer">
+                <div class="row">
+                  <div class="col-4 border-right">
+                    <div class="description-block">
+                      <h5 class="m-0 text-truncate">Cursos</h5>
+                      <p class="profile-number badge badge-dark m-0 mt-2">2</p>
+                    </div>
+                  </div>
+                  <div class="col-4 border-right">
+                    <div class="description-block">
+                      <h5 class="m-0 text-truncate">Clubes</h5>
+                      <p class="profile-number badge badge-dark m-0 mt-2">0</p>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="description-block">
+                      <h5 class="m-0 text-truncate">Certificados</h5>
+                      <p class="profile-number badge badge-dark m-0 mt-2">1</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card card-info mx-2">
+              <div class="card-header">
+                <h4 class="my-2">Datos de usuario: </h5>
+              </div>
+              <div class="card-body">
+                <ul class="list-unstyled">
+                  <li>
+                    <h5 class="mb-0 h6 text-muted">Correo Electrónico: </h5>
+                    <h6 class="text-truncate fw-normal">rudylaconejamalandra@gmail.com</h6>
+                  </li>
+                  <li>
+                    <h5 class="mb-0 h6 text-muted">Nombre de Usuario: </h5>
+                    <h6 class="text-truncate fw-normal">@rudy_hoshi</h6>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card card-info mx-2">
+              <div class="card-header">
+                <h4 class="my-2">Datos personales: </h4>
+              </div>
+              <div class="card-body">
+                <ul class="list-unstyled">
+                  <li>
+                    <h5 class="mb-0 h6 text-muted">Nombres: </h5>
+                    <h6 class="text-truncate fw-normal">Rudy Hoshijiro</h6>
+                  </li>
+                  <li>
+                    <h5 class="mb-0 h6 text-muted">Apellidos: </h5>
+                    <h6 class="text-truncate fw-normal">De Lacroix Sainte</h6>
+                  </li>
+                  <li>
+                    <h5 class="mb-0 h6 text-muted">Sexo: </h5>
+                    <h6 class="text-truncate fw-normal">Femenino</h6>
+                  </li>
+                  <li>
+                    <h5 class="mb-0 h6 text-muted">Cedula de Identidad: </h5>
+                    <h6 class="text-truncate fw-normal">A-00.000.001</h6>
+                  </li>
+                  <li>
+                    <h5 class="mb-0 h6 text-muted">Fecha de Nacimiento: </h5>
+                    <h6 class="text-truncate fw-normal">7 de julio de 2003</h6>
+                  </li>
+                  <li>
+                    <h5 class="mb-0 h6 text-muted">Número de Teléfono: </h5>
+                    <h6 class="text-truncate fw-normal">0412-8970019</h6>
+                  </li>
+                  <li>
+                    <h5 class="mb-0 h6 text-muted">Grado de Instrucción: </h5>
+                    <h6 class="text-truncate fw-normal">Diplomado en Rasguñación</h6>
+                  </li>
+                  <li>
+                    <h5 class="mb-0 h6 text-muted">Dirección: </h5>
+                    <h6 class="text-truncate fw-normal">Calle 777, Liebreville, Gabón.</h6>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7 col-xl-8">
+            <div class="card mx-2 card-dark">
+              <div class="card-header">
+                <h3 class="my-2">Mis cursos</h3>
+              </div>
+              <div class="card-body">
+                <div class="row no-gutters">
+                  <div class="col-sm-6 col-md-12">
+                    <div class="card mx-2 profile-card-shadow">
+                      <div class="row no-gutters">
+                        <div class="col-md-4">
+                          <img class="img-fluid h-100 rounded-left img-cover" src="assets/img/html.png"
+                            alt="Imagen del Curso: ">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="mb-0">Curso de Programación Web</h5>
+                            <div class="badge badge-success mb-3">Aprobado</div>
+                            <div class="d-flex align-items-center">
+                              <a class="btn btn-secondary" href="#">Certificado</a>
+                              <a class="btn btn-primary mx-2" href="#">Detalles</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-12">
+                    <div class="card mx-2 profile-card-shadow">
+                      <div class="row no-gutters">
+                        <div class="col-md-4">
+                          <img class="img-fluid h-100 rounded-left img-cover" src="assets/img/excel.jpg"
+                            alt="Imagen del Curso: ">
+                        </div>
+                        <div class="col-md-8 center-vertical">
+                          <div class="card-body">
+                            <h5 class="mb-0">Curso de Diseño Gráfico</h5>
+                            <div class="badge badge-danger mb-3">Reprobado</div>
+                            <div class="d-block">
+                              <a class="btn btn-primary" href="#">Detalles</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mx-2 card-dark">
+              <div class="card-header">
+                <h3 class="my-2">Mis clubes</h3>
+              </div>
+              <div class="card-body">
+                <div class="row no-gutters">
+                  <div class="col-sm-6 col-md-12">
+                    <div class="card mx-2 profile-card-shadow">
+                      <div class="row no-gutters">
+                        <div class="col-md-4">
+                          <img class="img-fluid h-100 rounded-left img-cover" src="assets/img/sample2.jpg"
+                            alt="Imagen del Curso: ">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <div class="mb-2">
+                              <h5 class="mb-0">Club de Futbol</h5>
+                              <span class="text-muted">Algo</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                              <a class="btn btn-primary" href="#">Detalles</a>
+                              <a class="btn btn-danger mx-2" href="#">Retirarse</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-12">
+                    <div class="card mx-2 profile-card-shadow">
+                      <div class="row no-gutters">
+                        <div class="col-md-4">
+                          <img class="img-fluid h-100 rounded-left img-cover" src="assets/img/sample2.jpg"
+                            alt="Imagen del Curso: ">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <div class="mb-2">
+                              <h5 class="mb-0">Club de Futbol</h5>
+                              <span class="text-muted">Algo</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                              <a class="btn btn-primary" href="#">Detalles</a>
+                              <a class="btn btn-danger mx-2" href="#">Retirarse</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <div id="infoModal" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Contáctanos</h4>
+          <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h5>Redes Sociales: </h5>
+          <ul class="d-flex list-unstyled">
+            <li class="mr-3">
+              <a href="#">
+                <i class="fab fa-facebook"></i>
+                Facebook
+              </a>
+            </li>
+            <li class="mr-3">
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+                Twitter
+              </a>
+            </li>
+            <li class="mr-3">
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+                Instagram
+              </a>
+            </li>
+          </ul>
+          <h5>Contacto: </h5>
+          <p>04XX-XXX-XXXX - correoupta@example.com</p>
+        </div>
+        <div class="modal-footer justify-content-between">
+          <span class="float-left">UPTA "Federico Brito Figueroa" | 2022</span>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/adminlte.min.js"></script>
+</body>
+
+</html>
