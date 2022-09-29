@@ -33,3 +33,5 @@
 - También ocurre que los cursos y clubes podrían no ser solamente un día a la semana, sino multiples, y cada día quizas tendría horas propias. Una solucion es implementar lo del horario de forma mas compleja, con Drag'n Drop maybe.
 
 - Pensar un poco en la naturaleza concurrente del proyecto, y errores que pueden haber y tal.
+
+- También está la cuestión de recuperación de base de datos, me dijeron que con "tarea programada", hay que investigar.

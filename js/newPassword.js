@@ -15,7 +15,6 @@ showButtons.forEach(button => {
 
 function toggleShowPassword(e) {
 	const icon = e.target.children[0];
-	console.log(icon)
 	const passwordInput = e.target.parentElement.parentElement.children[0];
 	
 	passwordInput.type = 

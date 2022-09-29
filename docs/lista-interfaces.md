@@ -83,8 +83,8 @@ PD: no se si vaya a haber notas de evaluaciones y tal, si ese es el caso, entonc
 + El form para registrar un cambio en el inventario.
 ### Lista de miembros club:
 + Literalmente eso, con CRUD y FSS i guess, y enlaces a los perfiles de la gente.
-<!-- ### Perfil:
-- Perfil de usuario propio, con datos personales, y estadísticas de uso del sistema, editar datos, etc. -->
+### Perfil:
++ Perfil de usuario propio, con datos personales, y estadísticas de uso del sistema, editar datos, etc.
 ### Horario (a lo mejor no):
 - Literalmente eso, un horario que muestre de una manera gráfica que días y horas te toca club y curso en la semana.
 
@@ -98,18 +98,24 @@ PD: no se si vaya a haber notas de evaluaciones y tal, si ese es el caso, entonc
 ### Inscripcion:
 * Pasos para inscripcion en curso.
 ### Clubes:
-- Ver clubes, link a detalles de club.
++ Ver clubes, link a detalles de club.
 <!-- ##### Detalle de club:
 - Ver detalles de club, inscribirse. -->
 ### Pagos:
 * Dos tabs: la primera con un CRUD de pagos realizados, y la segunda con cuotas pendientes y un link a pagar dichas cuotas.
 ### Pago de cuotas pendientes:
 - Basada en inscripcion, pero solo para pagar una cuota.
-<!-- ### Perfil:
-- Perfil de usuario con datos propios y estadísticas de uso del sistema. Editar datos. -->
+### Perfil:
++ Perfil de usuario con datos propios y estadísticas de uso del sistema. Editar datos.
 ### Horario (a lo mejor no):
 - Literalmente eso, un horario que muestre de una manera gráfica que días y horas te toca club y curso en la semana.
 
+ * Inscripción
+ * Artículos
+ * Pagos (estudiante)
+ - Pago de cuotas pendientes 
+ - Horario
+ * Estadística
 
 
 

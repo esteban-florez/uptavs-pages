@@ -5,6 +5,7 @@ switches.forEach(switchEl => switchEl.addEventListener('input', handleSwitchInpu
 function handleSwitchInput(e) {
   const switchEl = e.target;
   const labelEl = document.querySelector(`label[for="${switchEl.id}"]`);
+  
   if(switchEl.value === 'true') {
     switchEl.value = 'false';
     labelEl.innerText = 'No';
@@ -14,7 +15,6 @@ function handleSwitchInput(e) {
     labelEl.innerText = 'Sí';
     toggleLabelClass(labelEl);
   }
-  console.log(switchEl.value === 'true');
 }
 
 function toggleLabelClass(label) {
