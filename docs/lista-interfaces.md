@@ -96,7 +96,7 @@ PD: no se si vaya a haber notas de evaluaciones y tal, si ese es el caso, entonc
 <!-- ### Detalle de curso:
 + Ver detalles de curso, inscribirse. -->
 ### Inscripcion:
-* Pasos para inscripcion en curso.
++ Pasos para inscripcion en curso.
 ### Clubes:
 + Ver clubes, link a detalles de club.
 <!-- ##### Detalle de club:
@@ -110,7 +110,6 @@ PD: no se si vaya a haber notas de evaluaciones y tal, si ese es el caso, entonc
 ### Horario (a lo mejor no):
 - Literalmente eso, un horario que muestre de una manera gráfica que días y horas te toca club y curso en la semana.
 
- * Inscripción
  * Artículos
  * Pagos (estudiante)
  - Pago de cuotas pendientes 
