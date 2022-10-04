@@ -109,8 +109,12 @@ PD: no se si vaya a haber notas de evaluaciones y tal, si ese es el caso, entonc
 + Perfil de usuario con datos propios y estadísticas de uso del sistema. Editar datos.
 ### Horario (a lo mejor no):
 - Literalmente eso, un horario que muestre de una manera gráfica que días y horas te toca club y curso en la semana.
-
- * Artículos
+ 
+ * Registro de usuario desde dentro del sistema.
+ * Modal editar pago.
+ * Modal cierre de curso (izi)
+ * Añadir miembro/estudiante (miembros, matricula).
+ * Inventario (modal registro operacion)
  * Pagos (estudiante)
  - Pago de cuotas pendientes 
  - Horario

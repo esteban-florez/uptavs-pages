@@ -22,6 +22,11 @@
 - Rows con col-12 y mas nada adentro en algunas interfaces de tablas.
 - Paginaciones que faltan en ciertas interfaces
 - Actualizar sidebar con todos los links necesarios.
+- Quitar "inscripciones" de los detalles de club.
+- Cambiar "expediente.html" de singular a plural (en todo).
+- Agregar aviso de hacer click para ver detalle de expediente en "expedientes.html".
+- Cambiar "materiales" por "artículos" en historial.html
+- Ver donde es necesario poner botones de "volver" y así.
 
 # Cosas mas como de arquitectura que hay que decidir/solucionar:
 
