@@ -134,22 +134,22 @@
           <h1>Club de Ajedrez</h1>
         </div>
       </section>
-      <section class="container-fluid rounded mt-4 m-0 mb-">
-          <div class="row">
-            <div class="col-md-5 px-2">
-              <div class="card sticky">
-                <img src="assets/img/ajedrez.jpg" class="w-100 img-fluid img-course rounded elevation-1" alt="Imagen del curso">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between text-muted">
-                  </div>
-                  <a href="#" class="btn btn-primary btn-lg d-block mt-0">
-                    <i class="fas fa-pencil-alt mr-2"></i>
-                    <span class="font-weight-bold">Unirse</span>
-                  </a>
+      <section class="container-fluid rounded mt-4 m-0">
+        <div class="row">
+          <div class="col-md-5 px-2">
+            <div class="card sticky">
+              <img src="assets/img/ajedrez.jpg" class="w-100 img-fluid img-course rounded elevation-1" alt="Imagen del curso">
+              <div class="card-body">
+                <div class="d-flex justify-content-between text-muted">
                 </div>
+                <btn class="btn btn-primary btn-lg d-block mt-0" type="button" data-toggle="modal" data-target="#joinModal">
+                  <i class="fas fa-pencil-alt mr-2"></i>
+                  <span class="font-weight-bold">Unirse</span>
+                </btn>
               </div>
             </div>
-        <div class="col-md-7 px-2">
+          </div>
+          <div class="col-md-7 px-2">
           <div class="card card-info">
               <div class="card-header">
                 <h2>Información del club</h2>
@@ -168,8 +168,28 @@
               </div>
             </div>
           </div>
+        </div>
       </section>
     </main>
+  </div>
+  <div id="joinModal" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Unirse a club</h4>
+          <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p class="h5 font-weight-normal">¿Estás seguro de que deseas unirte al <b>Club de Ajedrez</b>?</p>
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-success">Aceptar</button>
+        </div>
+      </div>
+    </div>
   </div>
   <div id="infoModal" class="modal fade" tabindex="-1">
     <div class="modal-dialog">
